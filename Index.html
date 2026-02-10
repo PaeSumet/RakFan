@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RakAuan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Thai:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<canvas id="stars"></canvas>
+
+<div class="flash" id="flash"></div>
+<div class="hearts" id="hearts"></div>
+
+<!-- LOGIN -->
+<div id="login">
+    <h2>ใส่วันที่เราคบกัน?</h2>
+    <div class="input-gradient-border">
+    <input id="pass" placeholder="dd/mm/yyyy" maxlength="10">
+    </div>
+    <button onclick="check()">LOGIN</button>
+</div>
+
+<div class="flash" id="flash">
+    <div id="flashText" class="fadeText">
+       Dear Phetchada 💗
+    </div>
+</div>
+
+<!-- MAIN -->
+<div id="main" style="display:none">
+    
+<section>
+    <div class="card-gradient-border">
+        <div class="content">
+    <h1>เราคบกันมาแล้ว</h1>
+    <div class="timer" id="timer"></div>
+    </div>
+</div>
+</section>
+
+<section>
+<h2>Dear Phetchada 💗</h2>
+<div class="card">
+<p style="
+font-family: 'Playpen Sans Thai', cursive;
+font-weight:400;
+font-style:normal;
+">
+น้ำมูน เกิดวันที่ 31 ตุลาคม 2550 สูง157 หนัก46 เป็นโรคภูมิแพ้ Ambivert เจาะหู8รู เจาะสะดือ
+ ก่อนนอนจะซึมเพลียๆหลับไวมากกใน1นาที และตอนนอนจะชอบนอนละเมอแปลกๆ หงุดหงิดบ้าง ดีใจบ้าง ชอบเล่นบาสแต่เป็นคนตัวเล็กสู้คนอื่นไม่ค่อยได้ 
+ ซ้อมบาสแล้วแต่อารมณ์ ผลไม้ชอบอาโวคาโด้ปั่น ชอบกินหมาล่าไม่เผ็ดแล้วก็อาหารอะไรที่ไม่เผ็ดแต่ใส่พริก2เม็ด
+ ทำอะไรแล้วแต่อารมณ์ เล่นคุกกี้รัน แทบทุกวัน เล่นมายคราฟ เล่นเฮเด(อันนี้เมื่อก่อนตอนนี้ติดแฟนงอมแงม) 
+ กินน้ำอะไรได้หมดไม่มีที่ชอบเจาะจง(แต่จากที่สังเกตุชอบกินอะไรหวานๆเพราะเป็นอ้วน) 
+ ชอบดูหนังแฟนตาซี อ่านนิยาย ดูอนิเมะ ชอบวาดรูปเพราะอิสระไม่มีใครมาตำหนิฮีลใจตัวเองได้ ไม่ชอบทำงานเครียดๆไม่ชอบโดนว่าตำหนิบ่อยๆ 
+ เรียนศิลป์-ภาษา เรียนจีน12ชม./สัปดาห์จนเอี่ยนเลยไม่อยากเป็นครูภาษาจีน ตอนนี้ก็ยังไม่รู้ว่าอยากเข้ามหาลัยไหนกันแน่
+ เคยดูหนังผีแค่2ครั้ง ประจำเดือนจะมาช่วงต้นเดือน สิ่งที่เกลียดอันดับ1 คือบุหรี่ เป็นคนขี้หนาวมากกกพกผ้าห่มเสื้อกันหนาวไปแทบทุกที่ วาดรูปเก่งและชอบวาดมาก ติดสกินชิพสุด สมาธิสั้น
+ ไม่โกรธแต่เคือง เวลาเคืองต้องง้อด้วยเหตุผล น้ำมูนอาจทำไรไม่คิดไปบ้างเราอย่าพึ่งตัดสินให้น้ำมูนได้ทบทวนก่อน และน้ำมูนเป็นคนที่น่ารักมากกกกก สวยมากกก
+ น้ำมูนชอบอะไรน่ารักๆ เช่น สนูปปี้ ZooToPia ใช้เงินเก่งที่1 กินเก่งที่1 รักแฟนที่1เหมือนกันนน
+ <br>
+ เดี๋ยวนี้น้ำมูนติดแฟนงอมแงมไม่ยอมกลับบ้าน เป้ก็ติดน้ำมูนเหมือนกันทีนี้ มีหลายครั้งที่ไม่เข้าใจกันแต่ก็ไม่เคยทะเลาะกันแบบกระทบความสัมพันธ์
+ มองว่าเป็นการปรับตัวเข้าหากันมากกว่า
+เค้ารักอ้วนน้าา😘
+</p>
+</div>
+</section>
+
+<section>
+<h2>Happy Anniversary & Valentine NaKub TeRak💗 </h2>
+<div class="card" style="
+font-size: 20px;
+font-family: 'Playpen Sans Thai', cursive;
+font-weight:600;
+font-style:normal;
+">
+5 Month🎉<br>
+<p style="
+font-family: 'Playpen Sans Thai', cursive;
+font-weight:400;
+font-style:normal;
+">
+สุขสันต์วันครบรอบและวันวาเลนไทน์นะที่รัก วันนี้ถึงเราจะไม่ได้อยู่ด้วยกันแต่อีก2วันก็ได้เจอกันแล้ว วันแรกที่คบกันถึงวันนี้เค้ารักเทอแบบไหนเค้าก็ยังรักเทอแบบนั้น เค้าขอให้เราอยู่กันแบบนี้ไปนานๆนะที่รัก เค้ารักเทอนะน้ำมูน<3
+</p>
+</div>
+</section>
+
+<section>
+<h2>Nammoon & Pae 📸</h2>
+<div class="loveGrid" id="loveGrid"></div>
+
+<div class="viewer" id="viewer" onclick="this.style.display='none'">
+    <img id="viewImg">
+</div>
+</section>
+
+</div>
+
+<script>
+let loveDate;
+
+/* LOGIN */
+function check(){
+    const val = document.getElementById("pass").value;
+
+    // 🔒 ใส่วันคบจริงตรงนี้
+    const correctDate = "14/09/2568";
+
+    if(val !== correctDate){
+        alert("จำวันที่เราคบกันไม่ได้เหรอ 🥺");
+        return;
+    }
+
+    const [d,m,y] = val.split("/");
+    loveDate = new Date(y, m-1, d);
+
+    enterLoveWorld();
+}
+
+const input = document.getElementById("pass");
+
+input.addEventListener("input", function(e){
+    let v = this.value.replace(/\D/g,""); // เอาเฉพาะตัวเลข
+
+    if(v.length >= 3 && v.length <= 4)
+        v = v.slice(0,2) + "/" + v.slice(2);
+
+    else if(v.length >= 5)
+        v = v.slice(0,2) + "/" + v.slice(2,4) + "/" + v.slice(4,8);
+
+    this.value = v;
+});
+
+/* ENTER EFFECT */
+function enterLoveWorld(){
+    const flash = document.getElementById("flash");
+    const text = document.getElementById("flashText");
+
+    flash.style.display = "flex";
+    flash.style.opacity = "0";
+    flash.style.pointerEvents = "auto";
+
+    // รีเซ็ต animation
+    flash.classList.remove("showText");
+    void text.offsetWidth;
+    flash.classList.add("showText");
+
+    setTimeout(()=>{
+        flash.style.opacity = 0;
+        flash.style.display="none";
+
+        document.body.style.background =
+        "linear-gradient(#ffd6e7,#ffc0cb)";
+
+        document.getElementById("login").style.display="none";
+        document.getElementById("main").style.display="block";
+
+        loveDate = new Date(2025, 8, 14, 0, 0, 0);
+
+        startTimer();
+        startHearts();
+        setTimeout(() => { flash.style.display = "none"; }, 500);
+
+    },300);
+}
+
+
+
+const canvas = document.getElementById("stars");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let stars = [];
+
+for(let i=0;i<150;i++){
+    stars.push({
+        x: Math.random()*canvas.width,
+        y: Math.random()*canvas.height,
+        r: Math.random()*1.5,
+        d: Math.random()*0.5
+    });
+}
+
+function drawStars(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle="white";
+
+    stars.forEach(s=>{
+        ctx.beginPath();
+        ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+        ctx.fill();
+
+        // ขยับดาวช้าๆ
+        s.y += s.d;
+        if(s.y>canvas.height){
+            s.y=0;
+            s.x=Math.random()*canvas.width;
+        }
+    });
+
+    requestAnimationFrame(drawStars);
+}
+
+drawStars();
+
+// ปรับขนาดตามจอ
+window.addEventListener("resize",()=>{
+    canvas.width=window.innerWidth;
+    canvas.height=window.innerHeight;
+});
+
+
+/* TIMER */
+function startTimer(){
+    setInterval(()=>{
+        const now=new Date();
+        const diff=now-loveDate;
+
+        const d=Math.floor(diff/86400000);
+        const h=Math.floor(diff/3600000)%24;
+        const m=Math.floor(diff/60000)%60;
+        const s=Math.floor(diff/1000)%60;
+
+        document.getElementById("timer").innerHTML=
+        `${d} วัน ${h} ชม ${m} นาที ${s} วิ`;
+    },1000);
+}
+
+/* HEARTS START AFTER LOGIN */
+function startHearts(){
+    setInterval(()=>{
+        const heart=document.createElement("div");
+        heart.className="heart";
+        heart.innerHTML="💗";
+        heart.style.left=Math.random()*100+"%";
+        heart.style.fontSize=(15+Math.random()*25)+"px";
+        document.getElementById("hearts").appendChild(heart);
+        setTimeout(()=>heart.remove(),8000);
+    },300);
+}
+
+const loveGrid = document.getElementById("loveGrid");
+
+const pattern = [
+[0,1,1,0,1,1,0],
+[1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1],
+[0,1,1,1,1,1,0],
+[0,0,1,1,1,0,0],
+[0,0,0,1,0,0,0],
+];
+
+let imgNum = 1;
+
+pattern.forEach(row=>{
+    row.forEach(cell=>{
+        if(cell===1 && imgNum<=27){
+            const img=document.createElement("img");
+            img.src="Img/"+imgNum+".jpg";
+
+            img.onclick=()=>{
+                document.getElementById("viewer").style.display="flex";
+                document.getElementById("viewImg").src=img.src;
+            };
+
+            loveGrid.appendChild(img);
+            imgNum++;
+        }else{
+            const empty=document.createElement("div");
+            loveGrid.appendChild(empty);
+        }
+    });
+});
+</script>
+
+</body>
+</html>
