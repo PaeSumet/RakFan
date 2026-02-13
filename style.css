@@ -455,5 +455,17 @@ font-style:normal;
 }
 }
 
+#musicBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:pink;
+    border:none;
+    padding:12px 18px;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    box-shadow:0 0 15px hotpink;
+}
 
 

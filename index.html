@@ -46,6 +46,14 @@
     <div class="timer" id="timer"></div>
     </div>
 </div>
+
+<button onclick="toggleMusic()" id="musicBtn">
+    💗 เปิดเพลง
+</button>
+
+<audio id="bgMusic" loop>
+    <source src="Yours Ever.mp3" type="audio/mpeg">
+</audio>
 </section>
 
 <section>
@@ -148,7 +156,7 @@ font-style:normal;
     <div class="loveItem">
         <img src="Img/T5.jpg">
         <div class="text">
-            <h3>วันที่อ้วนเปิดใจ</h3>
+            <h3>วันที่น้ำมูนเปิดใจ</h3>
             <p>12 กรกฏาคม 2568 02:40น.</p>
         </div>
     </div>
@@ -158,6 +166,22 @@ font-style:normal;
         <div class="text">
             <h3>เดทแรกหนังผี 😱</h3>
             <p>17 กรกฏาคม 2568 10:40น.</p>
+        </div>
+    </div>
+
+    <div class="loveItem">
+        <img src="Img/T13.jpg">
+        <div class="text">
+            <h3>วันที่น้ำมูนเป็นงั่ง</h3>
+            <p>6 สิงหาคม 2568 01:51น.</p>
+        </div>
+    </div>
+
+    <div class="loveItem">
+        <img src="Img/T12.jpg">
+        <div class="text">
+            <h3>วันเช็คของ</h3>
+            <p>31 สิงหาคม 2568 15:12น.</p>
         </div>
     </div>
 
@@ -397,6 +421,19 @@ allImgs.forEach(img=>{
 
 function closeViewer(){
     document.getElementById("viewer").style.display="none";
+}
+
+const music = document.getElementById("bgMusic");
+const btn = document.getElementById("musicBtn");
+
+function toggleMusic(){
+    if(music.paused){
+        music.play();
+        btn.innerHTML="💞 ปิดเพลง";
+    }else{
+        music.pause();
+        btn.innerHTML="💗 เปิดเพลง";
+    }
 }
 </script>
 
